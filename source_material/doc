@@ -1,0 +1,17 @@
+Comme d'hab, on retrouve mon fameux doc...
+
+---------------
+ Pour les sons 
+---------------
+1) tuto de base :
+ - lien à s'abonner avant : http://steamcommunity.com/sharedfiles/filedetails/?id=178261761
+ - ça devrait DL sound_mod_tutorial dans dont_starve\mods
+ - si, comme moi, tu n'as pas dont_starve, faut aller dans Steam\userdata et chercher un mod_publish_data_file.zip de ~270ko
+ - http://forums.kleientertainment.com/topic/27721-sound-mod-tutorial/
+2) comprendre FMOD Designer :
+ - les catego, ça se crée, et on utilise le template de sound_mod_tutorial
+ - il faut ensuite rajouter des sons dans les catego
+ - on peut aussi suivre monsieur : http://forums.kleientertainment.com/topic/27803-tutorial-adding-custom-sound-to-your-custom-character/
+ - (c'est le template_waverly.fdp)
+ - régler les paramètres 3D
+ - dans le lua, on accède au son via "farts/characters/pab/fart" où le farts est le nom du projet... (c'est le path qu'on voit dans FMOD Designer associé à un event en fait)
