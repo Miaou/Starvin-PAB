@@ -31,6 +31,8 @@ Comme d'hab, on retrouve mon fameux doc...
 2) Monsieur ici fait un beau résumé : http://forums.kleientertainment.com/topic/25850-wots-the-diff-prefabs-components-stategraphs-and-brains/
  - prefabs -> config & status, config existing behhavior (see prefabs/wx78)
  - components -> how things are done (components/hunger)
+ - state graphs -> what's being done, and how prioritarily + the different states of the prefab
+ - brains -> how decision are made (highest level)
 
 
 -------
@@ -39,6 +41,9 @@ Comme d'hab, on retrouve mon fameux doc...
 - fart : + hunger + sanity
 - fart : mieux random
 - fart : pti nuage
-- fart : différencier en fct de l'apport de bouffe
+- fart : différencier le son et la qutité en fct de l'apport de bouffe (voire une barre de pet)
 - fart : j'apprécie les fruits au sirop
+- eat : manger plus lentement, se fait probablement en changeant son StateGraph, le State dont le nom est "eat", il faut changer la timeline, le 1° ou 2° TimeEvent, pour le rallonger
+  -> c'est pas ThePlayer.sg.sg.states.eat.timeline[1].time et ThePlayer.sg.sg.states.quickeat... mais les changer à la volée ne fait rien de bon...
+
 
