@@ -274,8 +274,8 @@
 <shuffleglobal>0</shuffleglobal>
 <sequentialrememberposition>0</sequentialrememberposition>
 <sequentialglobal>0</sequentialglobal>
-<spawntime_min>1</spawntime_min>
-<spawntime_max>1</spawntime_max>
+<spawntime_min>0</spawntime_min>
+<spawntime_max>0</spawntime_max>
 <spawn_max>2</spawn_max>
 <mode>0</mode>
 <pitch>0</pitch>

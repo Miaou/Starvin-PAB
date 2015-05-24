@@ -367,7 +367,7 @@
 <open>1</open>
 <notes></notes>
 <eventgroup>
-<name>waverly</name>
+<name>template_waverly</name>
 <guid>{7a794ac0-d26b-4b03-8350-62c7ca68c435}</guid>
 <eventgroup_nextid>0</eventgroup_nextid>
 <event_nextid>0</event_nextid>
@@ -1758,7 +1758,7 @@
 <_IOS_forcesoftware>1</_IOS_forcesoftware>
 <_IOS_maxstreams>10</_IOS_maxstreams>
 <_lang_default_filename_prefix></_lang_default_filename_prefix>
-<_lang_default_rebuild>0</_lang_default_rebuild>
+<_lang_default_rebuild>1</_lang_default_rebuild>
 </soundbank>
 <reverbdef>
 <name>default</name>
@@ -2149,7 +2149,7 @@
 <notes></notes>
 <currentplatform>PC</currentplatform>
 <_PC_encryptionkey></_PC_encryptionkey>
-<_PC_builddirectory>sound</_PC_builddirectory>
+<_PC_builddirectory>../sound</_PC_builddirectory>
 <_PC_audiosourcedirectory>./Wavs</_PC_audiosourcedirectory>
 <_PC_prebuildcommands></_PC_prebuildcommands>
 <_PC_postbuildcommands></_PC_postbuildcommands>
