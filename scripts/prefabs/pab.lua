@@ -33,10 +33,14 @@ local assets = {
 
 		-- Don't forget to include your character's custom assets!
         Asset( "ANIM", "anim/pab.zip" ),
+
+    -- Sound assetss
+    Asset( "SOUNDPACKAGE", "sound/farts.fev"),
+    Asset( "SOUND", "sound/farts.fsb"),
 }
 local prefabs = {}
 
-local fn = function(inst)
+local function common_postinit(inst)
 	
 	-- choose which sounds this character will play
 	inst.soundsname = "wolfgang"
@@ -48,5 +52,10 @@ local fn = function(inst)
 end
 
 
+local function master_postinit(inst)
+    inst:AddComponent("farter")
+    --inst.components.farter
+end
 
-return MakePlayerCharacter("pab", prefabs, assets, fn)
+
+return MakePlayerCharacter("pab", prefabs, assets, common_postinit, master_postinit)
