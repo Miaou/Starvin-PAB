@@ -1,5 +1,6 @@
 PrefabFiles = {
 	"pab",
+    "fartcloud"
 }
 
 Assets = {

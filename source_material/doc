@@ -1,4 +1,5 @@
 Comme d'hab, on retrouve mon fameux doc...
+http://forums.kleientertainment.com/topic/28021-getting-started-guides-tutorials-and-examples/
 
 ---------------
  Pour les sons 
@@ -35,15 +36,51 @@ Comme d'hab, on retrouve mon fameux doc...
  - brains -> how decision are made (highest level)
 
 
+---------
+ Animons 
+---------
+1) Utiliser Spriter
+ - (trop long) http://www.youtube.com/watch?v=a5DKcgCdAR0
+ - Donc on place ses sprites, on bone, on keyframes...
+ - Taille des images : ??? Réduction par 5 du nombre de pixels ???
+ - Vitesse d'animation : laisser 1000 fps, il se démerde pour générer ce qu'il faut.
+ - cf le Tuto 3 du creature mod http://steamcommunity.com/sharedfiles/filedetails/?id=177281900
+ - mais ne règle pas tous les pb
+2) Compiler
+ - ça devrait se faire tout seul en mettant le fichier .scml dans un dossier exported dans le mod
+ - pour moi, ça le fait pas, parce que l'outil plante sur un autre mod
+ - alors on peut utiliser "mod_tools\scml.exe path\to\scml.scml path\to\modDir" (modDir est PAB, il crée le dossier anim dedans si besoin...)
+ - le controle de l'opacité par spriter ne semble pas marcher.
+3) Scripter pour utiliser les anims
+ - cf prefabs/flies.lua ou Tuto 3 ou Tuto 7
+ - Dans le prefa, AddAnimState, puis 
+ - SetBank : nom de la banque d'animations (chargées par un Asset("ANIM", "....zip"))
+ - SetBuild : nom du zip qui contient le build.bin et le .tex (donc les sprites associés à l'atlas)
+4) Animation un peu moins basique (i.e. qui a une direction par exemple)
+ - Transform:SetFourFaced(), mais pas trouvé d'explication à ce sujet
+ - il semble que les persos soient compilés bizarrement
+  -> les "sources" pour les animations des persos : https://github.com/kleientertainment/ds_assets
+  -> mais dedans y'a le perso dans des positions bizarres, et pas du tout animés
+  -> comme j'ai dst, je peux pas test pour voir si ce .scml compilé par les autotools donne les mêmes animations
+  -> test de ktools http://forums.kleientertainment.com/files/file/583-ktools-cross-platform-modding-tools-for-dont-starve/
+  -> devrait permettre de décompiler une animation (rabbit par ex) pour comprendre comment sont gérées les 4 directions...
+5) Donc la décompilation marche plutôt pas mal, cf le rabbit
+   (dont le anim.bin est dans anim/ds_rabbit_basic et le build.bin+atlas.tex dans le anim/rabbit_build.zip)
+ - on obtient que Transform:SetFourFaced() permet d'utiliser AnimState:PlayAnimation("dudu"),
+   sachant que DST va chercher dudu_up, dudu_down, et dudu_side dans la banque sélectionnée
+  -> SetFourFaced() est-il nécessaire ?
+
+
 -------
  TODOs 
 -------
-- fart : + hunger + sanity
-- fart : mieux random
-- fart : pti nuage
-- fart : différencier le son et la qutité en fct de l'apport de bouffe (voire une barre de pet)
 - fart : j'apprécie les fruits au sirop
 - eat : manger plus lentement, se fait probablement en changeant son StateGraph, le State dont le nom est "eat", il faut changer la timeline, le 1° ou 2° TimeEvent, pour le rallonger
   -> c'est pas ThePlayer.sg.sg.states.eat.timeline[1].time et ThePlayer.sg.sg.states.quickeat... mais les changer à la volée ne fait rien de bon...
+- fart : mieux random, moins souvent
+- fart : pets fantomes
+- fart : + hunger + sanity -sanity aux autres
+- fart : pti nuage
+- fart : différencier le son et la qutité en fct de l'apport de bouffe (voire une barre de pet)
 
 
