@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="34"
@@ -16,7 +17,7 @@
    inkscape:version="0.91pre4 r13712"
    viewBox="0 0 34 34"
    sodipodi:docname="fart.svg"
-   inkscape:export-filename=".\fart.png"
+   inkscape:export-filename=".\fart_s.png"
    inkscape:export-xdpi="500"
    inkscape:export-ydpi="500">
   <defs
@@ -31,7 +32,7 @@
      inkscape:zoom="9.6"
      inkscape:cx="19.856534"
      inkscape:cy="11.363648"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      inkscape:document-units="px"
      showgrid="true"
      inkscape:snap-bbox="true"
@@ -83,12 +84,28 @@
      id="layer1"
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     transform="translate(0,-566)">
+     transform="translate(0,-566)"
+     style="display:none">
     <path
-       style="fill:#a45a00;fill-opacity:0.42660549;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#a45a00;fill-opacity:0.38990826;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 17,567 -1,14 c -3.067821,-4.48469 -3.324693,-1.16118 -4,1 -5.3333881,-2.50882 -7.1935776,-1.91004 -2,5 -2.646659,4.27894 -5.2834696,8.58124 4,5 1.509291,2.2433 5.299799,8.30063 6,0 3.641482,0.45722 8.105269,-1.40879 4,-5 6.007924,-4.91744 1.751504,-4.20498 -2,-5 3.304209,-4.27961 -1.094469,-3.85045 -4,-1 z"
        id="path5350"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Slim"
+     style="display:inline">
+    <use
+       transform="matrix(0.40458546,0,0,1,10.09912,-566)"
+       style="display:inline"
+       x="0"
+       y="0"
+       xlink:href="#path5350"
+       id="use4139"
+       width="100%"
+       height="100%" />
   </g>
 </svg>

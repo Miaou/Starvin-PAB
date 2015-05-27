@@ -82,5 +82,6 @@ http://forums.kleientertainment.com/topic/28021-getting-started-guides-tutorials
 - fart : + hunger + sanity -sanity aux autres
 - fart : pti nuage
 - fart : différencier le son et la qutité en fct de l'apport de bouffe (voire une barre de pet)
+- tester la bonne disparition des préfab fartcloud (cf components/periodicspawner:TrySpawn())
 
 

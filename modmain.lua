@@ -15,11 +15,11 @@ Assets = {
 
     Asset( "IMAGE", "bigportraits/pab.tex" ),
     Asset( "ATLAS", "bigportraits/pab.xml" ),
+
+    Asset( "IMAGE", "images/map_icons/pab.tex" ),
+    Asset( "ATLAS", "images/map_icons/pab.xml" ),
 	
-	Asset( "IMAGE", "images/map_icons/pab.tex" ),
-	Asset( "ATLAS", "images/map_icons/pab.xml" ),
-	
-	Asset( "IMAGE", "images/avatars/avatar_pab.tex" ),
+    Asset( "IMAGE", "images/avatars/avatar_pab.tex" ),
     Asset( "ATLAS", "images/avatars/avatar_pab.xml" ),
 	
 	Asset( "IMAGE", "images/avatars/avatar_ghost_pab.tex" ),
@@ -37,7 +37,7 @@ Assets = {
 GLOBAL.STRINGS.CHARACTER_TITLES.pab = "The Ancient PHD"
 GLOBAL.STRINGS.CHARACTER_NAMES.pab = "pab"  -- Note! This line is especially important as some parts of the game require
                                             -- the character to have a valid name.
-GLOBAL.STRINGS.CHARACTER_DESCRIPTIONS.pab = "*Eat slowly but has great mind strength to write on time."
+GLOBAL.STRINGS.CHARACTER_DESCRIPTIONS.pab = "*Eat slowly but has great mind strength to write on time.\n*Farts. A lot."
 GLOBAL.STRINGS.CHARACTER_QUOTES.pab = "\"Zizi.\""
 
 -- You can also add any kind of custom dialogue that you would like. Don't forget to make

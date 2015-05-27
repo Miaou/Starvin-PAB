@@ -1,8 +1,8 @@
 -- This information tells other players more about the mod
 name = "PAB"
 description = "This mod contains the wonderfull PAB skin."
-author = "BORDRON Matthias"
-version = "1.3"
+author = "BORDRON Matthias + PAB"
+version = "1.4"
 
 -- This is the URL name of the mod's thread on the forum; the part after the index.php? and before the first & in the URL
 -- Example:
